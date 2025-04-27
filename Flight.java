@@ -17,5 +17,56 @@ import java.time.*
         this.seats = seats;
     }
 
+  
+    public String getFlightType() {
+        return flightType;
+    }
+
+    public void setFlightType(String flightType) {
+        this.flightType = flightType;
+    }
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
+    }
+
+    public LocalDateTime getDepartureTime() {
+        return departureTime;
+    }
+
+    public void setDepartureTime(LocalDateTime departureTime) {
+        this.departureTime = departureTime;
+    }
+
+    public LocalDateTime getArrivalTime() {
+        return arrivalTime;
+    }
+
+    public void setArrivalTime(LocalDateTime arrivalTime) {
+        this.arrivalTime = arrivalTime;
+    }
+
+    public double getTicketFare() {
+        return ticketFare;
+    }
+
+    public void setTicketFare(double ticketFare) {
+        this.ticketFare = ticketFare;
+    }
+
+    public Seats[] getSeats() {
+        return seats;
+    }
+
+    public void setSeats(Seats[] seats) {
+        this.seats = seats;
+    }
+    
+    
+
 }
 
