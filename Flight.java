@@ -2,13 +2,14 @@ package com.mycompany.2Fly;
 import java.time.*
 
   public class Flight {
-  private String flightType, destination;
-  private localTime departureTime, arrivalTime;
-  private double airlineFare;
-  private Seats[] seats;
+   private String flightType;
+   private String destination;
+   private String departureTime;
+   private String arrivalTime;
+   private double airlineFare;
+   public seatManager[] seats;
 
-  public Flight(String flightType, String destination, LocalDateTime departureTime,
-                  LocalDateTime arrivalTime, double ticketFare, Seats[] seats) {
+    public Flight(String flightType, String destination, String departureTime, String arrivalTime, double airlineFare, seatManager[] seats) {
         this.flightType = flightType;
         this.destination = destination;
         this.departureTime = departureTime;
@@ -17,7 +18,6 @@ import java.time.*
         this.seats = seats;
     }
 
-  
     public String getFlightType() {
         return flightType;
     }
@@ -34,39 +34,39 @@ import java.time.*
         this.destination = destination;
     }
 
-    public LocalDateTime getDepartureTime() {
+    public String getDepartureTime() {
         return departureTime;
     }
 
-    public void setDepartureTime(LocalDateTime departureTime) {
+    public void setDepartureTime(String departureTime) {
         this.departureTime = departureTime;
     }
 
-    public LocalDateTime getArrivalTime() {
+    public String getArrivalTime() {
         return arrivalTime;
     }
 
-    public void setArrivalTime(LocalDateTime arrivalTime) {
+    public void setArrivalTime(String arrivalTime) {
         this.arrivalTime = arrivalTime;
     }
 
-    public double getTicketFare() {
-        return ticketFare;
+    public double getAirlineFare() {
+        return airlineFare;
     }
 
-    public void setTicketFare(double ticketFare) {
-        this.ticketFare = ticketFare;
+    public void setAirlineFare(double airlineFare) {
+        this.airlineFare = airlineFare;
     }
 
-    public Seats[] getSeats() {
+    public seatManager[] getSeats() {
         return seats;
     }
 
-    public void setSeats(Seats[] seats) {
+    public void setSeats(seatManager[] seats) {
         this.seats = seats;
     }
     
-    
 
+   
+     
 }
-
