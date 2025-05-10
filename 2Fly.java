@@ -158,7 +158,7 @@ public static void bookFlight() throws IOException {
         selectedSeat.setSeatBooked(true);
         String bookingID = UUID.randomUUID().toString().substring(0, 8);
 
-        // **Fix total fare calculation**
+
         double totalFare;
         if (selectedFlight instanceof domesticFlight) {
             totalFare = calculateDomesticFare((domesticFlight) selectedFlight);
@@ -173,16 +173,16 @@ public static void bookFlight() throws IOException {
         // Create a reservation with the current date/time
         LocalDateTime bookingDateTime = LocalDateTime.now();
         reservationSystem currentReservation = new reservationSystem(
-            passenger,           // Passenger object with details
-            selectedFlight,      // The flight that was selected
-            selectedSeat,        // The seat that was selected (single seat)
-            bookingID,           // The generated booking ID
-            totalFare,           // The calculated total fare
-            bookingDateTime      // Current date and time
+            passenger,         
+            selectedFlight,     
+            selectedSeat,      
+            bookingID,         
+            totalFare,           
+            bookingDateTime     
         );
 
         // Store the reservation in your system
-        reservations.add(currentReservation); // Assuming you have a list of reservations
+        reservations.add(currentReservation); 
 
         // Print the receipt
         System.out.println("\nBooking successful! Here is your receipt:\n");
